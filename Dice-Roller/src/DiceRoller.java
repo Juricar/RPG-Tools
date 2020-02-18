@@ -30,7 +30,7 @@ public class DiceRoller {
 		
 		frame.add(panel1, BorderLayout.CENTER);
 		
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.setVisible(true);
 	}
 	
