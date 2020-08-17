@@ -3,6 +3,8 @@ Tools for RPG game uses (mostly targeted towards D&amp;D at the moment) made in 
 
 Currently has a "Dice Roller" that allows the user to input a number of dice, and number of sides for those dice, and "rolls" those dice using a random number generator, after which it displays the results of each "dice" and the total value of all of the dice.
 
+>Need to add: Advantage and Disadvantage on rolls
+
 In-progress functionality includes a multitude of "Character Tools", which would allow the user to create/import new characters, and manipulate those characters. List of desired functionality is:
 >Tracking of current Health, Level, XP, Gold, and Spell Points.
 
