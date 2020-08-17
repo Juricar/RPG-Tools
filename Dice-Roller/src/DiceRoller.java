@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
 
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -38,6 +39,7 @@ public class DiceRoller {
 		
 		JPanel content = new JPanel();
 		content.setLayout(new GridLayout(5, 2, 20, 20));
+		content.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
 		
 		JLabel numDice = new JLabel("Number of Dice to roll:");
 		content.add(numDice);
@@ -76,7 +78,6 @@ public class DiceRoller {
 	
 	
 	private class SubmitListener implements ActionListener {
-
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
 			if (_numDice.getText().equals("") || _numSides.getText().equals("")) {
@@ -86,7 +87,7 @@ public class DiceRoller {
 			int numSides = Integer.parseInt(_numSides.getText());
 			String results = "";
 			int resultsTotal = 0;
-			Random rand = new Random();
+			Random rand = new Random(Integer.parseInt(java.time.LocalTime.now().toString().replaceAll("[\\D]", "")));
 			
 			for (int i = 0; i < numDice; i++) {
 				int randInt = rand.ints(1, 1, numSides + 1).sum();

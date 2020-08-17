@@ -16,7 +16,7 @@ public class Main {
 		frame.add(diceRoller);
 		
 		JButton characterRoller = new JButton("Open new Character? (WIP)");
-		characterRoller.addActionListener((event) -> System.out.println("OOF"));
+		characterRoller.addActionListener((event) -> System.out.println(java.time.LocalDateTime.now().toString().replaceAll("[\\D]", "")));
 		frame.add(characterRoller);
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
