@@ -20,6 +20,8 @@ In-progress functionality includes a multitude of "Character Tools", which would
 
 >Possible display of other misc. items on a generic character sheet (Personality Traints, Ideals, Bonds, Flaws, Background, ect.)
 
+>Usage of multi-classing
+
 >Allow for addition of custom classes, races, ect. for maximum usage.
 
 Future functionality would include online functionality to save character data to a server instead of saving locally, and DM tools, such as an initiative tracker, and notes page.
