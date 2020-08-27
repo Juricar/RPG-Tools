@@ -87,7 +87,7 @@ public class DiceRoller {
 			int numSides = Integer.parseInt(_numSides.getText());
 			String results = "";
 			int resultsTotal = 0;
-			Random rand = new Random(Integer.parseInt(java.time.LocalTime.now().toString().replaceAll("[\\D]", "")));
+			Random rand = new Random(Integer.parseInt(java.time.LocalTime.now().toString().substring(0, 10).replaceAll("[\\D]", "")));
 			
 			for (int i = 0; i < numDice; i++) {
 				int randInt = rand.ints(1, 1, numSides + 1).sum();
